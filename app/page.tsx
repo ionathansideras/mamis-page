@@ -101,7 +101,7 @@ export default function PhysicalTherapistWebsite() {
                         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
                             <div className="order-2 lg:order-1">
                                 <Image
-                                    src="/placeholder.svg?height=400&width=500"
+                                    src="/avatar.png"
                                     alt="Dr. Sarah Mitchell, Licensed Physical Therapist"
                                     width={500}
                                     height={400}
