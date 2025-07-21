@@ -9,11 +9,11 @@ import { Toaster } from "sonner";
 
 export default function PhysicalTherapistWebsite() {
     return (
-        <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white">
+        <div className="min-h-screen bg-gradient-to-b">
             {/* Header */}
             <header
                 role="banner"
-                className="bg-white/80 backdrop-blur-sm border-b border-rose-100 sticky top-0 z-50"
+                className="bg-white/80 backdrop-blur-sm border-b border-secondary sticky top-0 z-50"
             >
                 <div className="container mx-auto px-4 py-4">
                     <div className="flex items-center justify-between">
