@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, Clock, Award, Heart, Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { ContactForm } from "./components/contact-form";
+import { MapView } from "./components/map-view";
+import { Toaster } from "sonner";
 
 export default function PhysicalTherapistWebsite() {
     return (
@@ -41,24 +42,19 @@ export default function PhysicalTherapistWebsite() {
                                 Pricing
                             </Link>
                             <Link
-                                href="#appointment"
+                                href="#contact"
                                 className="text-gray-700 hover:text-rose-600 transition-colors"
                             >
-                                Book Appointment
+                                Contact
                             </Link>
                         </nav>
-                        <Button className="cursor-pointer bg-rose-500 hover:bg-rose-600 text-white text-sm px-3 py-2 sm:px-4 sm:py-2">
-                            <Phone className="h-4 w-4 mr-1 sm:mr-2" />
-                            <span className="hidden sm:inline">Call Now</span>
-                            <span className="sm:hidden">Call</span>
-                        </Button>
                     </div>
                 </div>
             </header>
 
             <main>
                 {/* Hero Section */}
-                <section className="py-12 sm:py-16 md:py-20 px-4">
+                <section className="py-12 sm:py-16 md:py-20 px-4 h-[88svh] flex items-center justify-center">
                     <div className="container mx-auto text-center">
                         <div className="max-w-4xl mx-auto">
                             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">
@@ -73,19 +69,24 @@ export default function PhysicalTherapistWebsite() {
                                 and return to the activities you love.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
-                                <Button
-                                    className="cursor-pointer bg-rose-500 hover:bg-rose-600 text-white px-6 sm:px-8 py-3 w-full sm:w-auto"
-                                    size="lg"
-                                >
-                                    Schedule Consultation
-                                </Button>
-                                <Button
-                                    size="lg"
-                                    variant="outline"
-                                    className="cursor-pointer border-rose-300 text-rose-600 hover:bg-rose-50 px-6 sm:px-8 py-3 bg-transparent w-full sm:w-auto"
-                                >
-                                    Learn More
-                                </Button>
+                                <Link href="#contact" passHref>
+                                    <Button
+                                        className="cursor-pointer bg-rose-500 hover:bg-rose-600 text-white px-6 sm:px-8 py-3 w-full sm:w-auto"
+                                        size="lg"
+                                    >
+                                        Contact Us
+                                    </Button>
+                                </Link>
+
+                                <Link href="#about" passHref>
+                                    <Button
+                                        size="lg"
+                                        variant="outline"
+                                        className="cursor-pointer border-rose-300 text-rose-600 hover:bg-rose-50 px-6 sm:px-8 py-3 bg-transparent w-full sm:w-auto"
+                                    >
+                                        Learn More
+                                    </Button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -332,45 +333,27 @@ export default function PhysicalTherapistWebsite() {
                                 </CardContent>
                             </Card>
                         </div>
-
-                        <div className="mt-8 sm:mt-12 text-center px-4">
-                            <Card className="max-w-2xl mx-auto bg-rose-50 border-rose-200">
-                                <CardContent className="p-4 sm:p-6">
-                                    <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                                        Insurance & Payment Options
-                                    </h4>
-                                    <p className="text-gray-600 mb-4 text-sm sm:text-base">
-                                        We accept most major insurance plans.
-                                        Payment plans and package deals
-                                        available for multiple sessions.
-                                    </p>
-                                    <Button className="cursor-pointer bg-rose-500 hover:bg-rose-600 text-white w-full sm:w-auto">
-                                        Check Insurance Coverage
-                                    </Button>
-                                </CardContent>
-                            </Card>
-                        </div>
                     </div>
                 </section>
 
                 {/* Book Appointment Section */}
-                <section id="appointment" className="py-20 px-4 bg-white">
+                <section id="contact" className="py-20 px-4 bg-white">
                     <div className="container mx-auto">
                         <div className="max-w-4xl mx-auto">
                             <div className="text-center mb-12">
                                 <h3 className="text-3xl font-bold text-gray-900 mb-4">
-                                    Book Your Appointment
+                                    Contact Us
                                 </h3>
                                 <p className="text-gray-600 text-lg">
                                     Ready to start your journey to better
-                                    health? Schedule your consultation today.
+                                    health? Get in touch with us today.
                                 </p>
                             </div>
 
                             <div className="grid lg:grid-cols-2 gap-8 sm:gap-12">
                                 <div className="space-y-4 sm:space-y-6">
                                     <Card className="p-4 sm:p-6 bg-rose-50 border-rose-200">
-                                        <div className="flex items-center space-x-3 mb-4">
+                                        <div className="flex items-center space-x-3">
                                             <Phone className="h-6 w-6 text-rose-500 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-gray-900">
@@ -388,111 +371,10 @@ export default function PhysicalTherapistWebsite() {
                                         </p>
                                     </Card>
 
-                                    <Card className="p-4 sm:p-6">
-                                        <div className="space-y-4">
-                                            <div className="flex items-center space-x-3">
-                                                <Clock className="h-5 w-5 text-rose-500 flex-shrink-0" />
-                                                <h4 className="font-semibold text-gray-900">
-                                                    Office Hours
-                                                </h4>
-                                            </div>
-                                            <div className="space-y-2 text-gray-600 text-sm sm:text-base">
-                                                <div className="flex justify-between">
-                                                    <span>Monday - Friday</span>
-                                                    <span>
-                                                        8:00 AM - 6:00 PM
-                                                    </span>
-                                                </div>
-                                                <div className="flex justify-between">
-                                                    <span>Saturday</span>
-                                                    <span>
-                                                        9:00 AM - 2:00 PM
-                                                    </span>
-                                                </div>
-                                                <div className="flex justify-between">
-                                                    <span>Sunday</span>
-                                                    <span>Closed</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </Card>
-
-                                    <Card className="p-4 sm:p-6">
-                                        <div className="space-y-4">
-                                            <div className="flex items-center space-x-3">
-                                                <MapPin className="h-5 w-5 text-rose-500 flex-shrink-0" />
-                                                <h4 className="font-semibold text-gray-900">
-                                                    Location
-                                                </h4>
-                                            </div>
-                                            <div className="text-gray-600 text-sm sm:text-base">
-                                                <p>123 Wellness Drive</p>
-                                                <p>Suite 200</p>
-                                                <p>Healthville, ST 12345</p>
-                                            </div>
-                                        </div>
-                                    </Card>
+                                    <MapView />
                                 </div>
 
-                                <Card className="p-4 sm:p-6">
-                                    <h4 className="font-semibold text-gray-900 mb-4">
-                                        Request Appointment
-                                    </h4>
-                                    <form className="space-y-4">
-                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                            <div>
-                                                <label className="block text-sm font-medium text-gray-700 mb-1">
-                                                    First Name
-                                                </label>
-                                                <Input placeholder="Your first name" />
-                                            </div>
-                                            <div>
-                                                <label className="block text-sm font-medium text-gray-700 mb-1">
-                                                    Last Name
-                                                </label>
-                                                <Input placeholder="Your last name" />
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">
-                                                Email *
-                                            </label>
-                                            <Input
-                                                type="email"
-                                                placeholder="your.email@example.com"
-                                                required
-                                            />
-                                        </div>
-                                        <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">
-                                                Phone *
-                                            </label>
-                                            <Input
-                                                type="tel"
-                                                placeholder="(555) 123-4567"
-                                                required
-                                            />
-                                        </div>
-                                        <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">
-                                                Preferred Date
-                                            </label>
-                                            <Input type="date" />
-                                        </div>
-                                        <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">
-                                                Message
-                                            </label>
-                                            <Textarea
-                                                placeholder="Tell us about your condition or what you'd like to discuss during your appointment..."
-                                                rows={4}
-                                            />
-                                        </div>
-                                        <Button className="cursor-pointer w-full bg-rose-500 hover:bg-rose-600 text-white">
-                                            Request Appointment
-                                        </Button>
-                                    </form>
-                                </Card>
+                                <ContactForm />
                             </div>
                         </div>
                     </div>
@@ -559,22 +441,16 @@ export default function PhysicalTherapistWebsite() {
                                     Pricing
                                 </Link>
                                 <Link
-                                    href="#appointment"
+                                    href="#contact"
                                     className="block text-gray-400 hover:text-white transition-colors"
                                 >
-                                    Book Appointment
-                                </Link>
-                                <Link
-                                    href="#"
-                                    className="block text-gray-400 hover:text-white transition-colors"
-                                >
-                                    Insurance
+                                    Contact
                                 </Link>
                             </div>
                         </div>
                     </div>
 
-                    <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                    <div className="border-t border-gray-800 mt-8 pt-11 text-center text-gray-400">
                         <p>
                             &copy; {new Date().getFullYear()} Dr. Sarah Mitchell
                             Physical Therapy. All rights reserved.
@@ -582,6 +458,7 @@ export default function PhysicalTherapistWebsite() {
                     </div>
                 </div>
             </footer>
+            <Toaster position="top-right" richColors />
         </div>
     );
 }

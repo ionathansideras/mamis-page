@@ -6,9 +6,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Dr. Sarah Mitchell - Physical Therapy | Expert PT Care in Healthville",
+    title: "Dr. Sarah Mitchell - Physical Therapy | Contact Expert PT Care in Healthville",
     description:
-        "Expert physical therapy services by Dr. Sarah Mitchell, DPT. Specializing in orthopedic rehabilitation, sports injuries, chronic pain management, and post-surgical recovery in Healthville.",
+        "Contact Dr. Sarah Mitchell, DPT for expert physical therapy services. Specializing in orthopedic rehabilitation, sports injuries, chronic pain management, and post-surgical recovery in Healthville.",
     keywords:
         "physical therapy, physical therapist, orthopedic rehabilitation, sports injury, chronic pain, post-surgical recovery, manual therapy, Healthville, Dr. Sarah Mitchell",
     authors: [{ name: "Dr. Sarah Mitchell" }],
