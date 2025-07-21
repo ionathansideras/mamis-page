@@ -2,16 +2,92 @@
 
 import nodemailer from "nodemailer";
 
-export async function submitContactForm(formData: FormData) {
-    const firstName = formData.get("firstName") as string;
-    const lastName = formData.get("lastName") as string;
-    const email = formData.get("email") as string;
-    const phone = formData.get("phone") as string;
-    const preferredDate = formData.get("preferredDate") as string;
-    const message = formData.get("message") as string;
+// --- Utility functions ---
+function sanitizeInput(input: string | null): string {
+    if (!input) return "";
+    return input
+        .replace(/<[^>]*>/g, "") // Remove HTML tags
+        .replace(/[<>'"&]/g, (match) => {
+            const escapeMap: { [key: string]: string } = {
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': "&quot;",
+                "'": "&#x27;",
+                "&": "&amp;",
+            };
+            return escapeMap[match] || match;
+        })
+        .trim();
+}
 
+function validateEmail(email: string): boolean {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+function validatePhone(phone: string): boolean {
+    const cleanPhone = phone.replace(/\D/g, "");
+    return cleanPhone.length >= 10 && cleanPhone.length <= 15;
+}
+
+// --- Server action ---
+export async function submitContactForm(formData: FormData) {
     try {
-        // Create transporter with SMTP credentials
+        const rawEmail = formData.get("email") as string;
+        const rawPhone = formData.get("phone") as string;
+        const rawFirstName = formData.get("firstName") as string;
+        const rawLastName = formData.get("lastName") as string;
+        const rawPreferredDate = formData.get("preferredDate") as string;
+        const rawMessage = formData.get("message") as string;
+
+        if (!rawEmail?.trim())
+            return { success: false, message: "Email is required." };
+        if (!rawPhone?.trim())
+            return { success: false, message: "Phone number is required." };
+
+        const firstName = sanitizeInput(rawFirstName);
+        const lastName = sanitizeInput(rawLastName);
+        const email = sanitizeInput(rawEmail);
+        const phone = sanitizeInput(rawPhone);
+        const preferredDate = sanitizeInput(rawPreferredDate);
+        const rawMessageSanitized = sanitizeInput(rawMessage);
+
+        const message =
+            rawMessageSanitized.length > 500
+                ? rawMessageSanitized.substring(0, 500)
+                : rawMessageSanitized;
+
+        if (!validateEmail(email))
+            return {
+                success: false,
+                message: "Please enter a valid email address.",
+            };
+        if (!validatePhone(phone))
+            return {
+                success: false,
+                message: "Please enter a valid phone number.",
+            };
+        if (firstName.length > 50)
+            return {
+                success: false,
+                message: "First name must be less than 50 characters.",
+            };
+        if (lastName.length > 50)
+            return {
+                success: false,
+                message: "Last name must be less than 50 characters.",
+            };
+
+        console.log("Sending sanitized contact form:", {
+            firstName,
+            lastName,
+            email,
+            phone: phone.substring(0, 3) + "***",
+            preferredDate,
+            messageLength: message.length,
+        });
+
+        // --- Configure Nodemailer ---
         const transporter = nodemailer.createTransport({
             host: process.env.SMTP_HOST,
             port: Number(process.env.SMTP_PORT),
@@ -22,10 +98,10 @@ export async function submitContactForm(formData: FormData) {
             },
         });
 
-        // Send email
+        // --- Send the actual email ---
         await transporter.sendMail({
-            from: `"Contact Form" <${process.env.SMTP_USER}>`,
-            to: process.env.CONTACT_RECEIVER_EMAIL, // Your destination email
+            from: `"Website Contact" <${process.env.SMTP_USER}>`,
+            to: process.env.CONTACT_RECEIVER_EMAIL,
             subject: "New Contact Form Submission",
             html: `
                 <h2>New Contact Form Submission</h2>
@@ -43,11 +119,11 @@ export async function submitContactForm(formData: FormData) {
             message: "Thank you for your message! We will contact you soon.",
         };
     } catch (error) {
-        console.error("Error sending email:", error);
+        console.error("Error sending contact form email:", error);
         return {
             success: false,
             message:
-                "Sorry, there was an error sending your message. Please try again.",
+                "There was a problem sending your message. Please try again later.",
         };
     }
 }
