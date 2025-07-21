@@ -367,7 +367,7 @@ export default function PhysicalTherapistWebsite() {
                                                     Call Us
                                                 </h4>
                                                 <p className="text-gray-600">
-                                                    (555) 123-4567
+                                                    +37069987387
                                                 </p>
                                             </div>
                                         </div>
@@ -425,7 +425,7 @@ export default function PhysicalTherapistWebsite() {
                             <div className="space-y-2 text-gray-300">
                                 <div className="flex items-center space-x-2">
                                     <Phone className="h-4 w-4" />
-                                    <span>(555) 123-4567</span>
+                                    <span>+37069987387</span>
                                 </div>
                                 <div className="flex items-center space-x-2">
                                     <Mail className="h-4 w-4" />
