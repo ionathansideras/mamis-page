@@ -7,7 +7,7 @@ export function MapView() {
         <Card className="p-4 sm:p-6">
             <div className="space-y-4">
                 <div className="flex items-center space-x-3">
-                    <MapPin className="h-5 w-5 text-rose-500 flex-shrink-0" />
+                    <MapPin className="h-5 w-5 text-primary flex-shrink-0" />
                     <h4 className="font-semibold text-gray-900">Find Us</h4>
                 </div>
                 <div className="text-gray-600 text-sm sm:text-base mb-4">
@@ -24,7 +24,7 @@ export function MapView() {
                         allowFullScreen
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
-                        title="Dr. Sarah Mitchell Physical Therapy Location"
+                        title="Irinos masažo terapija Physical Therapy Location"
                     />
                 </div>
             </div>

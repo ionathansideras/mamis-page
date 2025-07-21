@@ -6,27 +6,27 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Dr. Sarah Mitchell - Physical Therapy | Contact Expert PT Care in Healthville",
+    title: "Irinos masažo terapija - Physical Therapy | Contact Expert PT Care in Healthville",
     description:
-        "Contact Dr. Sarah Mitchell, DPT for expert physical therapy services. Specializing in orthopedic rehabilitation, sports injuries, chronic pain management, and post-surgical recovery in Healthville.",
+        "Contact Irinos masažo terapija, DPT for expert physical therapy services. Specializing in orthopedic rehabilitation, sports injuries, chronic pain management, and post-surgical recovery in Healthville.",
     keywords:
-        "physical therapy, physical therapist, orthopedic rehabilitation, sports injury, chronic pain, post-surgical recovery, manual therapy, Healthville, Dr. Sarah Mitchell",
-    authors: [{ name: "Dr. Sarah Mitchell" }],
-    creator: "Dr. Sarah Mitchell Physical Therapy",
-    publisher: "Dr. Sarah Mitchell Physical Therapy",
+        "physical therapy, physical therapist, orthopedic rehabilitation, sports injury, chronic pain, post-surgical recovery, manual therapy, Healthville, Irinos masažo terapija",
+    authors: [{ name: "Irinos masažo terapija" }],
+    creator: "Irinos masažo terapija Physical Therapy",
+    publisher: "Irinos masažo terapija Physical Therapy",
     robots: "index, follow",
     openGraph: {
-        title: "Dr. Sarah Mitchell - Physical Therapy | Expert PT Care",
+        title: "Irinos masažo terapija - Physical Therapy | Expert PT Care",
         description:
             "Expert physical therapy services specializing in orthopedic rehabilitation, sports injuries, and chronic pain management.",
         url: "https://sarahmitchellpt.com",
-        siteName: "Dr. Sarah Mitchell Physical Therapy",
+        siteName: "Irinos masažo terapija Physical Therapy",
         type: "website",
         locale: "en_US",
     },
     twitter: {
         card: "summary_large_image",
-        title: "Dr. Sarah Mitchell - Physical Therapy",
+        title: "Irinos masažo terapija - Physical Therapy",
         description:
             "Expert physical therapy services specializing in orthopedic rehabilitation and sports injuries.",
     },
@@ -49,7 +49,7 @@ export default function RootLayout({
                         __html: JSON.stringify({
                             "@context": "https://schema.org",
                             "@type": "MedicalBusiness",
-                            name: "Dr. Sarah Mitchell Physical Therapy",
+                            name: "Irinos masažo terapija Physical Therapy",
                             description:
                                 "Expert physical therapy services specializing in orthopedic rehabilitation, sports injuries, and chronic pain management.",
                             url: "https://sarahmitchellpt.com",
@@ -71,7 +71,7 @@ export default function RootLayout({
                             medicalSpecialty: "Physical Therapy",
                             founder: {
                                 "@type": "Person",
-                                name: "Dr. Sarah Mitchell",
+                                name: "Irinos masažo terapija",
                                 jobTitle: "Doctor of Physical Therapy",
                                 description:
                                     "Licensed physical therapist with over 12 years of experience specializing in orthopedic rehabilitation and sports injuries.",

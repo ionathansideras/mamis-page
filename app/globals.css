@@ -41,6 +41,12 @@
     --radius-md: calc(var(--radius) - 2px);
     --radius-lg: var(--radius);
     --radius-xl: calc(var(--radius) + 4px);
+
+    --color-primary-light: #f1eada;
+    --color-primary-dark: #9b8f79;
+
+    --color-secondary-light: #f8f8f4;
+    --color-secondary-dark: #d1d0c6;
 }
 
 :root {
@@ -51,9 +57,9 @@
     --card-foreground: oklch(0.145 0 0);
     --popover: oklch(1 0 0);
     --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.205 0 0);
+    --primary: #b9ac94;
     --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.97 0 0);
+    --secondary: #f1f0eb;
     --secondary-foreground: oklch(0.205 0 0);
     --muted: oklch(0.97 0 0);
     --muted-foreground: oklch(0.556 0 0);

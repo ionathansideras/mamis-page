@@ -95,7 +95,7 @@ export function ContactForm() {
                 <Button
                     type="submit"
                     disabled={isPending}
-                    className="cursor-pointer w-full bg-rose-500 hover:bg-rose-600 text-white"
+                    className="cursor-pointer w-full bg-primary hover:bg-primary-dark text-white"
                 >
                     {isPending ? "Sending..." : "Send Message"}
                 </Button>

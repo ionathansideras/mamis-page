@@ -18,10 +18,17 @@ export default function PhysicalTherapistWebsite() {
                 <div className="container mx-auto px-4 py-4">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-2">
-                            <Heart className="h-8 w-8 text-rose-500" />
+                            <Image
+                                className="h-16 w-16 rounded-2xl"
+                                src="/logo.jpg"
+                                alt="Irinos masažo terapija Logo"
+                                width={52}
+                                height={52}
+                                priority
+                            />
                             <div>
                                 <h1 className="text-lg sm:text-xl font-bold text-gray-900">
-                                    Dr. Sarah Mitchell
+                                    Irinos masažo terapija
                                 </h1>
                                 <p className="text-xs sm:text-sm text-gray-600">
                                     Physical Therapy
@@ -31,19 +38,19 @@ export default function PhysicalTherapistWebsite() {
                         <nav className="hidden md:flex space-x-6">
                             <Link
                                 href="#about"
-                                className="text-gray-700 hover:text-rose-600 transition-colors"
+                                className="text-gray-700 hover:text-primary-dark transition-colors"
                             >
                                 About
                             </Link>
                             <Link
                                 href="#pricing"
-                                className="text-gray-700 hover:text-rose-600 transition-colors"
+                                className="text-gray-700 hover:text-primary-dark transition-colors"
                             >
                                 Pricing
                             </Link>
                             <Link
                                 href="#contact"
-                                className="text-gray-700 hover:text-rose-600 transition-colors"
+                                className="text-gray-700 hover:text-primary-dark transition-colors"
                             >
                                 Contact
                             </Link>
@@ -54,12 +61,12 @@ export default function PhysicalTherapistWebsite() {
 
             <main>
                 {/* Hero Section */}
-                <section className="py-12 sm:py-16 md:py-20 px-4 h-[88svh] flex items-center justify-center">
+                <section className="py-12 sm:py-16 md:py-20 px-4 h-[88svh] flex items-center justify-center bg-secondary-light">
                     <div className="container mx-auto text-center">
                         <div className="max-w-4xl mx-auto">
                             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">
                                 Restore Your Movement,{" "}
-                                <span className="text-rose-500">
+                                <span className="text-primary">
                                     Reclaim Your Life
                                 </span>
                             </h2>
@@ -71,7 +78,7 @@ export default function PhysicalTherapistWebsite() {
                             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
                                 <Link href="#contact" passHref>
                                     <Button
-                                        className="cursor-pointer bg-rose-500 hover:bg-rose-600 text-white px-6 sm:px-8 py-3 w-full sm:w-auto"
+                                        className="cursor-pointer bg-primary hover:bg-primary-dark text-white px-6 sm:px-8 py-3 w-full sm:w-auto"
                                         size="lg"
                                     >
                                         Contact Us
@@ -82,7 +89,7 @@ export default function PhysicalTherapistWebsite() {
                                     <Button
                                         size="lg"
                                         variant="outline"
-                                        className="cursor-pointer border-rose-300 text-rose-600 hover:bg-rose-50 px-6 sm:px-8 py-3 bg-transparent w-full sm:w-auto"
+                                        className="cursor-pointer border-primary text-primary hover:border-primary-dark hover:text-primary-dark hover:bg-secondary px-6 sm:px-8 py-3 bg-transparent w-full sm:w-auto"
                                     >
                                         Learn More
                                     </Button>
@@ -102,7 +109,7 @@ export default function PhysicalTherapistWebsite() {
                             <div className="order-2 lg:order-1">
                                 <Image
                                     src="/avatar.png"
-                                    alt="Dr. Sarah Mitchell, Licensed Physical Therapist"
+                                    alt="Irinos masažo terapija"
                                     width={500}
                                     height={400}
                                     className="rounded-2xl shadow-lg w-full max-w-md mx-auto lg:max-w-none"
@@ -111,7 +118,7 @@ export default function PhysicalTherapistWebsite() {
                             <div className="space-y-4 sm:space-y-6 order-1 lg:order-2">
                                 <div>
                                     <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
-                                        About Dr. Sarah Mitchell
+                                        About Irinos masažo terapija
                                     </h3>
                                     <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
                                         With over 12 years of experience in
@@ -135,7 +142,7 @@ export default function PhysicalTherapistWebsite() {
 
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                                     <div className="flex items-start space-x-3">
-                                        <Award className="h-6 w-6 text-rose-500 mt-1 flex-shrink-0" />
+                                        <Award className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                                         <div>
                                             <h4 className="font-semibold text-gray-900">
                                                 Licensed DPT
@@ -146,7 +153,7 @@ export default function PhysicalTherapistWebsite() {
                                         </div>
                                     </div>
                                     <div className="flex items-start space-x-3">
-                                        <Users className="h-6 w-6 text-rose-500 mt-1 flex-shrink-0" />
+                                        <Users className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                                         <div>
                                             <h4 className="font-semibold text-gray-900">
                                                 1000+ Patients
@@ -158,7 +165,7 @@ export default function PhysicalTherapistWebsite() {
                                     </div>
                                 </div>
 
-                                <div className="bg-rose-50 p-4 sm:p-6 rounded-xl">
+                                <div className="bg-secondary-light p-4 sm:p-6 rounded-xl">
                                     <h4 className="font-semibold text-gray-900 mb-3">
                                         Specializations
                                     </h4>
@@ -185,7 +192,7 @@ export default function PhysicalTherapistWebsite() {
                 {/* Pricing Section */}
                 <section
                     id="pricing"
-                    className="py-12 sm:py-16 md:py-20 px-4 bg-gradient-to-b from-rose-50 to-white"
+                    className="py-12 sm:py-16 md:py-20 px-4 bg-gradient-to-b bg-secondary-light to-white"
                 >
                     <div className="container mx-auto">
                         <div className="text-center mb-8 sm:mb-12">
@@ -201,16 +208,16 @@ export default function PhysicalTherapistWebsite() {
                         </div>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-                            <Card className="hover:shadow-lg transition-shadow border-2 hover:border-rose-200">
+                            <Card className="hover:shadow-lg transition-shadow border-2 hover:border-primary">
                                 <CardContent className="p-6">
                                     <div className="text-center mb-4">
-                                        <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                            <Users className="h-8 w-8 text-rose-500" />
+                                        <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                                            <Users className="h-8 w-8 text-primary" />
                                         </div>
                                         <h4 className="text-xl font-semibold text-gray-900">
                                             Initial Evaluation
                                         </h4>
-                                        <p className="text-3xl font-bold text-rose-500 mt-2">
+                                        <p className="text-3xl font-bold text-primary mt-2">
                                             $150
                                         </p>
                                     </div>
@@ -223,16 +230,16 @@ export default function PhysicalTherapistWebsite() {
                                 </CardContent>
                             </Card>
 
-                            <Card className="hover:shadow-lg transition-shadow border-2 hover:border-rose-200">
+                            <Card className="hover:shadow-lg transition-shadow border-2 hover:border-primary">
                                 <CardContent className="p-6">
                                     <div className="text-center mb-4">
-                                        <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                            <Heart className="h-8 w-8 text-rose-500" />
+                                        <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                                            <Heart className="h-8 w-8 text-primary" />
                                         </div>
                                         <h4 className="text-xl font-semibold text-gray-900">
                                             Manual Therapy
                                         </h4>
-                                        <p className="text-3xl font-bold text-rose-500 mt-2">
+                                        <p className="text-3xl font-bold text-primary mt-2">
                                             $120
                                         </p>
                                     </div>
@@ -245,16 +252,16 @@ export default function PhysicalTherapistWebsite() {
                                 </CardContent>
                             </Card>
 
-                            <Card className="hover:shadow-lg transition-shadow border-2 hover:border-rose-200">
+                            <Card className="hover:shadow-lg transition-shadow border-2 hover:border-primary">
                                 <CardContent className="p-6">
                                     <div className="text-center mb-4">
-                                        <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                            <Award className="h-8 w-8 text-rose-500" />
+                                        <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                                            <Award className="h-8 w-8 text-primary" />
                                         </div>
                                         <h4 className="text-xl font-semibold text-gray-900">
                                             Sports Rehabilitation
                                         </h4>
-                                        <p className="text-3xl font-bold text-rose-500 mt-2">
+                                        <p className="text-3xl font-bold text-primary mt-2">
                                             $130
                                         </p>
                                     </div>
@@ -267,16 +274,16 @@ export default function PhysicalTherapistWebsite() {
                                 </CardContent>
                             </Card>
 
-                            <Card className="hover:shadow-lg transition-shadow border-2 hover:border-rose-200">
+                            <Card className="hover:shadow-lg transition-shadow border-2 hover:border-primary">
                                 <CardContent className="p-6">
                                     <div className="text-center mb-4">
-                                        <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                            <Clock className="h-8 w-8 text-rose-500" />
+                                        <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                                            <Clock className="h-8 w-8 text-primary" />
                                         </div>
                                         <h4 className="text-xl font-semibold text-gray-900">
                                             Therapeutic Exercise
                                         </h4>
-                                        <p className="text-3xl font-bold text-rose-500 mt-2">
+                                        <p className="text-3xl font-bold text-primary mt-2">
                                             $100
                                         </p>
                                     </div>
@@ -289,16 +296,16 @@ export default function PhysicalTherapistWebsite() {
                                 </CardContent>
                             </Card>
 
-                            <Card className="hover:shadow-lg transition-shadow border-2 hover:border-rose-200">
+                            <Card className="hover:shadow-lg transition-shadow border-2 hover:border-primary">
                                 <CardContent className="p-6">
                                     <div className="text-center mb-4">
-                                        <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                            <MapPin className="h-8 w-8 text-rose-500" />
+                                        <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                                            <MapPin className="h-8 w-8 text-primary" />
                                         </div>
                                         <h4 className="text-xl font-semibold text-gray-900">
                                             Post-Surgical Recovery
                                         </h4>
-                                        <p className="text-3xl font-bold text-rose-500 mt-2">
+                                        <p className="text-3xl font-bold text-primary mt-2">
                                             $140
                                         </p>
                                     </div>
@@ -311,16 +318,16 @@ export default function PhysicalTherapistWebsite() {
                                 </CardContent>
                             </Card>
 
-                            <Card className="hover:shadow-lg transition-shadow border-2 hover:border-rose-200">
+                            <Card className="hover:shadow-lg transition-shadow border-2 hover:border-primary">
                                 <CardContent className="p-6">
                                     <div className="text-center mb-4">
-                                        <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                            <Phone className="h-8 w-8 text-rose-500" />
+                                        <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                                            <Phone className="h-8 w-8 text-primary" />
                                         </div>
                                         <h4 className="text-xl font-semibold text-gray-900">
                                             Chronic Pain Management
                                         </h4>
-                                        <p className="text-3xl font-bold text-rose-500 mt-2">
+                                        <p className="text-3xl font-bold text-primary mt-2">
                                             $125
                                         </p>
                                     </div>
@@ -352,9 +359,9 @@ export default function PhysicalTherapistWebsite() {
 
                             <div className="grid lg:grid-cols-2 gap-8 sm:gap-12">
                                 <div className="space-y-4 sm:space-y-6">
-                                    <Card className="p-4 sm:p-6 bg-rose-50 border-rose-200">
+                                    <Card className="p-4 sm:p-6 bg-secondary-light border-primary">
                                         <div className="flex items-center space-x-3">
-                                            <Phone className="h-6 w-6 text-rose-500 flex-shrink-0" />
+                                            <Phone className="h-6 w-6 text-primary flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-gray-900">
                                                     Call Us
@@ -390,17 +397,23 @@ export default function PhysicalTherapistWebsite() {
                     <div className="grid md:grid-cols-3 gap-8">
                         <div>
                             <div className="flex items-center space-x-2 mb-4">
-                                <Heart className="h-6 w-6 text-rose-500" />
+                                <Image
+                                    className="h-12 w-12 rounded-full"
+                                    src="/logo.jpg"
+                                    alt="Irinos masažo terapija Logo"
+                                    width={48}
+                                    height={48}
+                                />
                                 <div>
                                     <h3 className="text-lg font-bold">
-                                        Dr. Sarah Mitchell
+                                        Irinos masažo terapija
                                     </h3>
-                                    <p className="text-gray-400 text-sm">
+                                    <p className="text-gray-300 text-sm">
                                         Physical Therapy
                                     </p>
                                 </div>
                             </div>
-                            <p className="text-gray-400">
+                            <p className="text-gray-300">
                                 Dedicated to helping you achieve optimal health
                                 and wellness through personalized physical
                                 therapy care.
@@ -409,7 +422,7 @@ export default function PhysicalTherapistWebsite() {
 
                         <div>
                             <h4 className="font-semibold mb-4">Contact Info</h4>
-                            <div className="space-y-2 text-gray-400">
+                            <div className="space-y-2 text-gray-300">
                                 <div className="flex items-center space-x-2">
                                     <Phone className="h-4 w-4" />
                                     <span>(555) 123-4567</span>
@@ -430,19 +443,19 @@ export default function PhysicalTherapistWebsite() {
                             <div className="space-y-2">
                                 <Link
                                     href="#about"
-                                    className="block text-gray-400 hover:text-white transition-colors"
+                                    className="block text-gray-300 hover:text-white transition-colors"
                                 >
                                     About
                                 </Link>
                                 <Link
                                     href="#pricing"
-                                    className="block text-gray-400 hover:text-white transition-colors"
+                                    className="block text-gray-300 hover:text-white transition-colors"
                                 >
                                     Pricing
                                 </Link>
                                 <Link
                                     href="#contact"
-                                    className="block text-gray-400 hover:text-white transition-colors"
+                                    className="block text-gray-300 hover:text-white transition-colors"
                                 >
                                     Contact
                                 </Link>
@@ -450,10 +463,10 @@ export default function PhysicalTherapistWebsite() {
                         </div>
                     </div>
 
-                    <div className="border-t border-gray-800 mt-8 pt-11 text-center text-gray-400">
+                    <div className="border-t border-gray-800 mt-8 pt-11 text-center text-gray-300">
                         <p>
-                            &copy; {new Date().getFullYear()} Dr. Sarah Mitchell
-                            Physical Therapy. All rights reserved.
+                            &copy; {new Date().getFullYear()} Irinos masažo
+                            terapija Physical Therapy. All rights reserved.
                         </p>
                     </div>
                 </div>
