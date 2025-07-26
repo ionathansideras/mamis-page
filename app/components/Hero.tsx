@@ -19,7 +19,7 @@ export default function Hero() {
             </div>
 
             {/* Top Right - Always Larger */}
-            <div className="absolute top-8 sm:top-1 right-4 sm:right-1 animate-float-medium">
+            <div className="absolute top-0 sm:top-1 right-4 sm:right-1 animate-float-medium">
                 <Image
                     src="/top-right.webp"
                     alt="Rehabilitation exercise"
@@ -31,7 +31,7 @@ export default function Hero() {
             </div>
 
             {/* Bottom Left - Always Larger */}
-            <div className="absolute bottom-8 sm:bottom-0 left-4 sm:left-1 animate-float-medium rotate-280">
+            <div className="absolute bottom-0 sm:bottom-0 left-4 sm:left-1 animate-float-medium rotate-280">
                 <Image
                     src="/bottom-left.webp"
                     alt="Therapy session"
