@@ -14,10 +14,10 @@ export default function Footer() {
                         <div className="flex items-center space-x-2 mb-4">
                             <Image
                                 className="h-12 w-12 rounded-full"
-                                src="/logo.jpg"
+                                src="/logo.webp"
                                 alt="Irinos masažo terapija Logo"
-                                width={48}
-                                height={48}
+                                width={300}
+                                height={300}
                             />
                             <div>
                                 <h3 className="text-lg font-bold">

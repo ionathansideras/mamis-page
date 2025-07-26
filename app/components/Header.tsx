@@ -12,10 +12,10 @@ export default function Header() {
                     <div className="flex items-center space-x-2">
                         <Image
                             className="h-16 w-16 rounded-2xl"
-                            src="/logo.jpg"
+                            src="/logo.webp"
                             alt="Irinos masažo terapija Logo"
-                            width={52}
-                            height={52}
+                            width={300}
+                            height={300}
                             priority
                         />
                         <div>

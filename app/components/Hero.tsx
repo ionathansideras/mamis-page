@@ -1,11 +1,60 @@
 import { Button } from "@/components/ui/button";
-import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
     return (
-        <section className="py-12 sm:py-16 md:py-20 px-4 h-[88svh] flex items-center justify-center bg-secondary-light">
-            <div className="container mx-auto text-center">
+        <section className="relative py-12 sm:py-16 md:py-20 px-4 h-[88svh] flex items-center justify-center bg-secondary-light overflow-hidden">
+            {/* Floating Images */}
+            {/* Top Left - Always Smaller */}
+            <div className="absolute top-1 sm:top-1 left-4 sm:left-1 animate-float-slow">
+                <Image
+                    src="/top-left.webp"
+                    alt="Physical therapy equipment"
+                    width={120}
+                    height={120}
+                    className="w-20 h-20 sm:w-28 sm:h-28"
+                    priority
+                />
+            </div>
+
+            {/* Top Right - Always Larger */}
+            <div className="absolute top-8 sm:top-1 right-4 sm:right-1 animate-float-medium">
+                <Image
+                    src="/top-right.webp"
+                    alt="Rehabilitation exercise"
+                    width={180}
+                    height={180}
+                    className="w-32 h-32 sm:w-44 sm:h-44"
+                    priority
+                />
+            </div>
+
+            {/* Bottom Left - Always Larger */}
+            <div className="absolute bottom-8 sm:bottom-0 left-4 sm:left-1 animate-float-medium rotate-280">
+                <Image
+                    src="/bottom-left.webp"
+                    alt="Therapy session"
+                    width={180}
+                    height={180}
+                    className="w-32 h-32 sm:w-44 sm:h-44"
+                    priority
+                />
+            </div>
+
+            {/* Bottom Right - Always Smaller */}
+            <div className="absolute bottom-4 sm:bottom-5 right-4 sm:right-1 animate-float-slow">
+                <Image
+                    src="/bottom-right.webp"
+                    alt="Wellness and recovery"
+                    width={120}
+                    height={120}
+                    className="w-20 h-20 sm:w-28 sm:h-28"
+                    priority
+                />
+            </div>
+
+            <div className="container mx-auto text-center relative z-10">
                 <div className="max-w-4xl mx-auto">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">
                         Restore Your Movement,{" "}
@@ -25,12 +74,11 @@ export default function Hero() {
                                 Contact Us
                             </Button>
                         </Link>
-
                         <Link href="#about" passHref>
                             <Button
                                 size="lg"
                                 variant="outline"
-                                className="cursor-pointer border-primary text-primary hover:border-primary-dark hover:text-primary-dark hover:bg-secondary px-6 sm:px-8 py-3 bg-transparent w-full sm:w-auto"
+                                className="cursor-pointer bg-secondary-light border-primary text-primary hover:border-primary-dark hover:text-primary-dark hover:bg-secondary px-6 sm:px-8 py-3 w-full sm:w-auto"
                             >
                                 Learn More
                             </Button>
