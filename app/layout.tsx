@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     publisher: "Irinos masažo terapija",
     robots: "index, follow",
     openGraph: {
-        title: "Irinos masažo terapija – Vainotiškiai, Kaunas, Kėdainiai",
+        title: "Irinos masažo terapija – Rūpinimasis savimi – pirmas žingsnis į geresnę savijautą",
         description:
             "Profesionali Irinos masažo terapija Vainotiškiuose, Kėdainių ir Kauno rajonuose – klasikiniai, atpalaiduojantys ir anticeliulitiniai masažai gerinantys savijautą.",
         url: "https://irinos-masazo-terapija.vercel.app/",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Irinos masažo terapija – Vainotiškiai, Kaunas, Kėdainiai",
+        title: "Irinos masažo terapija – Rūpinimasis savimi – pirmas žingsnis į geresnę savijautą",
         description:
             "Profesionali Irinos masažo terapija Vainotiškiuose, Kėdainių ir Kauno rajonuose – klasikiniai, atpalaiduojantys ir anticeliulitiniai masažai gerinantys savijautą.",
         // jei turite Twitter paveikslėlį, pridėkite:
