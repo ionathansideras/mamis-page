@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://irinos-masazo-terapija.vercel.app/sitemap.xml
