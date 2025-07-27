@@ -23,9 +23,9 @@ export default function Footer() {
                                 <h3 className="text-lg font-bold">
                                     Irinos masažo terapija
                                 </h3>
-                                <p className="text-gray-300 text-sm">
+                                {/* <p className="text-gray-300 text-sm">
                                     Physical Therapy
-                                </p>
+                                </p> */}
                             </div>
                         </div>
                         <p className="text-gray-300">

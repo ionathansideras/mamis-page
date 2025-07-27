@@ -25,6 +25,10 @@ export default function About() {
                             kokybiškas ir profesionalias masažo paslaugas
                             kiekvienam.
                         </p>
+                        <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+                            Tikiu, kad masažas – tai ne tik kūno, bet ir sielos
+                            poilsis
+                        </p>
                     </div>
                     <div className="space-y-4 sm:space-y-6">
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
@@ -32,7 +36,7 @@ export default function About() {
                                 <Award className="h-6 w-6 text-primary my-auto flex-shrink-0" />
                                 <div>
                                     <h4 className="font-semibold text-gray-900">
-                                        Specializuojuosi šiose srityse
+                                        Sertifikuota masažo specialistė
                                     </h4>
                                 </div>
                             </div>
@@ -50,7 +54,7 @@ export default function About() {
                         </div>
                         <div className="bg-secondary-light p-4 sm:p-6 rounded-xl">
                             <h4 className="font-semibold text-gray-900 mb-3">
-                                Specializations
+                                Specializuojuosi šiose srityse
                             </h4>
                             <ul className="space-y-2 text-gray-600 text-sm sm:text-base">
                                 <li>

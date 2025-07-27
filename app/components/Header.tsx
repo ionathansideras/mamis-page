@@ -22,9 +22,9 @@ export default function Header() {
                             <h1 className="text-lg sm:text-xl font-bold text-gray-900">
                                 Irinos masažo terapija
                             </h1>
-                            <p className="text-xs sm:text-sm text-gray-600">
+                            {/* <p className="text-xs sm:text-sm text-gray-600">
                                 Physical Therapy
-                            </p>
+                            </p> */}
                         </div>
                     </div>
                     <nav className="hidden md:flex space-x-6">

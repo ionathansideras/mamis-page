@@ -1,7 +1,7 @@
 export default function Pricing() {
     const services = [
         {
-            title: "Initial Evaluation",
+            title: "Klasikinis nugaros masažas",
             price: "$150",
             description: "Comprehensive assessment",
             duration: "60-minute session",
