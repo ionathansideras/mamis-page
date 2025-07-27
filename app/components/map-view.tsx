@@ -18,15 +18,15 @@ export function MapView() {
                 </div>
                 <div className="w-full h-64 rounded-lg overflow-hidden border border-gray-200">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d415.28126272606033!2d23.846780174793274!3d55.39685776048078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e65a0f77c24183%3A0x2518bd6f70d066d2!2zQWlixJc!5e1!3m2!1sel!2sgr!4v1753105617571!5m2!1sel!2sgr"
+                        src="https://maps.google.com/maps?q=Jaunimo%20g.%207,%20Vainoti%C5%A1ki%C5%B3%20k.,%20K%C4%97daini%C5%B3%20r.,%20Lietuva&hl=lt&z=15&output=embed"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}
-                        allowFullScreen={true}
+                        allowFullScreen
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
-                        title="Irinos masažo terapija Physical Therapy Location"
-                    ></iframe>
+                        title="Irinos masažo terapija – Jaunimo g. 7, Vainotiškių k., Kėdainių r."
+                    />
                 </div>
             </div>
         </Card>
