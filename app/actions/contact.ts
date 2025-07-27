@@ -41,9 +41,12 @@ export async function submitContactForm(formData: FormData) {
         const rawMessage = formData.get("message") as string;
 
         if (!rawEmail?.trim())
-            return { success: false, message: "Email is required." };
+            return { success: false, message: "Būtinas el." };
         if (!rawPhone?.trim())
-            return { success: false, message: "Phone number is required." };
+            return {
+                success: false,
+                message: "Būtina nurodyti telefono numerį.",
+            };
 
         const firstName = sanitizeInput(rawFirstName);
         const lastName = sanitizeInput(rawLastName);
@@ -60,22 +63,22 @@ export async function submitContactForm(formData: FormData) {
         if (!validateEmail(email))
             return {
                 success: false,
-                message: "Please enter a valid email address.",
+                message: "Įveskite galiojantį el. pašto adresą.",
             };
         if (!validatePhone(phone))
             return {
                 success: false,
-                message: "Please enter a valid phone number.",
+                message: "Įveskite galiojantį telefono numerį.",
             };
         if (firstName.length > 50)
             return {
                 success: false,
-                message: "First name must be less than 50 characters.",
+                message: "Vardas turi būti trumpesnis nei 50 simbolių.",
             };
         if (lastName.length > 50)
             return {
                 success: false,
-                message: "Last name must be less than 50 characters.",
+                message: "Pavardė turi būti trumpesnė nei 50 simbolių.",
             };
 
         console.log("Sending sanitized contact form:", {
@@ -116,14 +119,14 @@ export async function submitContactForm(formData: FormData) {
 
         return {
             success: true,
-            message: "Thank you for your message! We will contact you soon.",
+            message: "Dėkojame už jūsų žinutę! Netrukus su jumis susisieksime.",
         };
     } catch (error) {
         console.error("Error sending contact form email:", error);
         return {
             success: false,
             message:
-                "There was a problem sending your message. Please try again later.",
+                "Siunčiant jūsų žinutę kilo problemų. Bandykite dar kartą vėliau.",
         };
     }
 }
