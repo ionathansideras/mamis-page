@@ -36,7 +36,9 @@ export function ContactForm() {
 
     return (
         <Card className="p-4 sm:p-6">
-            <h4 className="font-semibold text-gray-900 mb-4">Raskite mus</h4>
+            <h4 className="font-semibold text-gray-900 mb-4">
+                Parašykite žinutę
+            </h4>
             <form id="contact-form" action={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
