@@ -24,12 +24,12 @@ export const metadata: Metadata = {
         type: "website",
         locale: "lt_LT",
         // jei turite OG paveikslėlį, pridėkite:
-        // images: [
-        //   {
-        //     url: "https://irinos-masazo-terapija.vercel.app/images/og-masazas.jpg",
-        //     alt: "Irinos masažo terapija – masažas Vainotiškiuose"
-        //   }
-        // ],
+        images: [
+            {
+                url: "https://irinos-masazo-terapija.vercel.app/logo.webp",
+                alt: "Irinos masažo terapija – Atsipalaiduok su profesionaliu masažu",
+            },
+        ],
     },
     twitter: {
         card: "summary_large_image",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         description:
             "Masažo terapija Vainotiškiuose (Kėdainių r., Jaunimo g. 7) – profesionalūs klasikiniai, atpalaiduojantys ir anticeliulitiniai masažai gerinančiai savijautai.",
         // jei turite Twitter paveikslėlį, pridėkite:
-        // images: "https://irinos-masazo-terapija.vercel.app/images/twitter-masazas.jpg",
+        images: "https://irinos-masazo-terapija.vercel.app/logo.webp",
     },
     viewport: "width=device-width, initial-scale=1",
     themeColor: "#f43f5e",
