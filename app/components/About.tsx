@@ -10,46 +10,41 @@ export default function About() {
                 <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-start">
                     <div>
                         <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
-                            About Irinos masažo terapija
+                            Apie Irinos masažo terapiją
                         </h3>
                         <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
-                            With over 12 years of experience in physical
-                            therapy, I am passionate about helping patients
-                            overcome pain and movement limitations. My approach
-                            combines evidence-based treatment techniques with
-                            compassionate care to create personalized recovery
-                            plans.
+                            Esu masažo specialistė, turinti daugiau nei 6 metų
+                            patirtį. Atlieku klasikinius, atpalaiduojančius bei
+                            anticeliulitinius masažus. Kiekvieną klientą
+                            pasitinku su rūpesčiu ir nuoširdžiu noru padėti.
                         </p>
                         <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-                            I specialize in orthopedic rehabilitation, sports
-                            injuries, and chronic pain management. My goal is to
-                            not just treat symptoms, but to address the root
-                            cause of your condition and empower you with the
-                            knowledge and tools for long-term wellness.
+                            Masažuotojos kelią pasirinkau vedama noro padėti
+                            žmonėms jaustis geriau – tiek fiziškai, tiek
+                            emociškai. Džiaugiuosi galėdama užtikrinti
+                            kokybiškas ir profesionalias masažo paslaugas
+                            kiekvienam.
                         </p>
                     </div>
                     <div className="space-y-4 sm:space-y-6">
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                             <div className="flex items-start space-x-3">
-                                <Award className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                                <Award className="h-6 w-6 text-primary my-auto flex-shrink-0" />
                                 <div>
                                     <h4 className="font-semibold text-gray-900">
-                                        Licensed DPT
+                                        Specializuojuosi šiose srityse
                                     </h4>
-                                    <p className="text-gray-600 text-sm">
-                                        Doctor of Physical Therapy
-                                    </p>
                                 </div>
                             </div>
                             <div className="flex items-start space-x-3">
-                                <Users className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                                <Users className="h-6 w-6 my-auto text-primary  flex-shrink-0" />
                                 <div>
                                     <h4 className="font-semibold text-gray-900">
-                                        1000+ Patients
+                                        300+ laimingų klientų
                                     </h4>
-                                    <p className="text-gray-600 text-sm">
+                                    {/* <p className="text-gray-600 text-sm">
                                         Successfully treated
-                                    </p>
+                                    </p> */}
                                 </div>
                             </div>
                         </div>
@@ -58,11 +53,18 @@ export default function About() {
                                 Specializations
                             </h4>
                             <ul className="space-y-2 text-gray-600 text-sm sm:text-base">
-                                <li>• Orthopedic & Sports Rehabilitation</li>
-                                <li>• Manual Therapy & Joint Mobilization</li>
-                                <li>• Chronic Pain Management</li>
-                                <li>• Post-Surgical Recovery</li>
-                                <li>• Movement Analysis & Correction</li>
+                                <li>
+                                    • Klasikinis nugaros ir viso kūno masažas
+                                </li>
+                                <li>
+                                    • Atpalaiduojantis nugaros ir viso kūno
+                                    masažas įtampos mažinimui
+                                </li>
+                                <li>
+                                    • Anticeliulitinis masažas kūno linijų
+                                    gerinimui
+                                </li>
+                                <li>• Kaklo, pečių ir kojų masažai</li>
                             </ul>
                         </div>
                     </div>

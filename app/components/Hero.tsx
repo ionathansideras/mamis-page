@@ -57,13 +57,14 @@ export default function Hero() {
             <div className="container mx-auto text-center relative z-10">
                 <div className="max-w-4xl mx-auto">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">
-                        Restore Your Movement,{" "}
-                        <span className="text-primary">Reclaim Your Life</span>
+                        Rūpinimasis savimi – pirmas žingsnis į{" "}
+                        <span className="text-primary">geresnę savijautą</span>
                     </h2>
                     <p className="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
-                        Expert physical therapy care with a personalized
-                        approach to help you achieve your wellness goals and
-                        return to the activities you love.
+                        Masažas padeda sumažinti įtampą, atstatyti energiją ir
+                        sugrąžinti harmoniją kūne bei mintyse. Reguliarūs
+                        masažai gerina kraujotaką, atpalaiduoja raumenis ir
+                        suteikia kūnui lengvumo pojūtį
                     </p>
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
                         <Link href="#contact" passHref>
@@ -71,7 +72,7 @@ export default function Hero() {
                                 className="cursor-pointer bg-primary hover:bg-primary-dark text-white px-6 sm:px-8 py-3 w-full sm:w-auto"
                                 size="lg"
                             >
-                                Contact Us
+                                Susisiekite
                             </Button>
                         </Link>
                         <Link href="#about" passHref>
@@ -80,7 +81,7 @@ export default function Hero() {
                                 variant="outline"
                                 className="cursor-pointer bg-secondary-light border-primary text-primary hover:border-primary-dark hover:text-primary-dark hover:bg-secondary px-6 sm:px-8 py-3 w-full sm:w-auto"
                             >
-                                Learn More
+                                Sužinokite daugiau
                             </Button>
                         </Link>
                     </div>

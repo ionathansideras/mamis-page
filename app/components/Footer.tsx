@@ -29,8 +29,9 @@ export default function Footer() {
                             </div>
                         </div>
                         <p className="text-gray-300">
-                            Dedicated to helping you achieve optimal health and
-                            wellness through personalized physical therapy care.
+                            Padedu žmonėms jaustis geriau per individualiai
+                            pritaikytus masažus – kūno lengvumui, ramybei ir
+                            gerai savijautai
                         </p>
                     </div>
 

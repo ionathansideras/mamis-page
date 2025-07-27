@@ -10,11 +10,11 @@ export default function Contact() {
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-12">
                         <h3 className="text-3xl font-bold text-gray-900 mb-4">
-                            Contact Us
+                            Susisiekite
                         </h3>
                         <p className="text-gray-600 text-lg">
-                            Ready to start your journey to better health? Get in
-                            touch with us today.
+                            Jei jaučiate, kad jūsų kūnui reikia poilsio –
+                            susisiekite
                         </p>
                     </div>
 

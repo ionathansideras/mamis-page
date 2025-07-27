@@ -46,12 +46,11 @@ export default function Pricing() {
             <div className="container mx-auto max-w-4xl">
                 <div className="text-center mb-8 sm:mb-12">
                     <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
-                        Our Services & Pricing
+                        Paslaugos ir kainos
                     </h3>
                     <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
-                        Comprehensive physical therapy services tailored to your
-                        specific needs. All sessions include personalized
-                        treatment plans and ongoing support.
+                        Visos paslaugos pritaikomos individualiai – siekiant
+                        maksimalaus atsipalaidavimo ir geros savijautos
                     </p>
                 </div>
 
