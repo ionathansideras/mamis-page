@@ -6,9 +6,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Irinos masažo terapija – Vainotiškiai, Kaunas, Kėdainiai",
+    title: "Irinos masažo terapija – Atsipalaiduok su profesionaliu masažu",
     description:
-        "Profesionali Irinos masažo terapija Vainotiškiuose, Kėdainių ir Kauno rajonuose – klasikiniai, atpalaiduojantys ir anticeliulitiniai masažai gerinantys savijautą.",
+        "Masažo terapija Vainotiškiuose (Kėdainių r., Jaunimo g. 7) – profesionalūs klasikiniai, atpalaiduojantys ir anticeliulitiniai masažai gerinančiai savijautai.",
     keywords:
         "Irinos masažo terapija, masažas Kaunas, masažas Kėdainiai, masažas Kauno raj., atpalaiduojantis masažas, anticeliulitinis masažas, nugaros masažas, kaklo masažas, Vainotiškiai, masažo paslaugos",
     authors: [{ name: "Irinos masažo terapija" }],
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     publisher: "Irinos masažo terapija",
     robots: "index, follow",
     openGraph: {
-        title: "Irinos masažo terapija – Rūpinimasis savimi – pirmas žingsnis į geresnę savijautą",
+        title: "Irinos masažo terapija – Atsipalaiduok su profesionaliu masažu",
         description:
-            "Profesionali Irinos masažo terapija Vainotiškiuose, Kėdainių ir Kauno rajonuose – klasikiniai, atpalaiduojantys ir anticeliulitiniai masažai gerinantys savijautą.",
+            "Masažo terapija Vainotiškiuose (Kėdainių r., Jaunimo g. 7) – profesionalūs klasikiniai, atpalaiduojantys ir anticeliulitiniai masažai gerinančiai savijautai.",
         url: "https://irinos-masazo-terapija.vercel.app/",
         siteName: "Irinos masažo terapija",
         type: "website",
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Irinos masažo terapija – Rūpinimasis savimi – pirmas žingsnis į geresnę savijautą",
+        title: "Irinos masažo terapija – Atsipalaiduok su profesionaliu masažu",
         description:
-            "Profesionali Irinos masažo terapija Vainotiškiuose, Kėdainių ir Kauno rajonuose – klasikiniai, atpalaiduojantys ir anticeliulitiniai masažai gerinantys savijautą.",
+            "Masažo terapija Vainotiškiuose (Kėdainių r., Jaunimo g. 7) – profesionalūs klasikiniai, atpalaiduojantys ir anticeliulitiniai masažai gerinančiai savijautai.",
         // jei turite Twitter paveikslėlį, pridėkite:
         // images: "https://irinos-masazo-terapija.vercel.app/images/twitter-masazas.jpg",
     },
@@ -64,7 +64,7 @@ export default function RootLayout({
                             "@type": "HealthAndBeautyBusiness",
                             name: "Irinos masažo terapija",
                             description:
-                                "Profesionali Irinos masažo terapija Vainotiškiuose, Kaune ir Kėdainiuose – klasikiniai, atpalaiduojantys ir anticeliulitiniai masažai.",
+                                "Masažo terapija Vainotiškiuose (Kėdainių r., Jaunimo g. 7) – profesionalūs klasikiniai, atpalaiduojantys ir anticeliulitiniai masažai gerinančiai savijautai.",
                             url: "https://irinos-masazo-terapija.vercel.app/",
                             telephone: "+37069987387",
                             email: "irinaul@gmail.com",
