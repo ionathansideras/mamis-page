@@ -2,45 +2,39 @@ export default function Pricing() {
     const services = [
         {
             title: "Klasikinis nugaros masažas",
-            price: "$150",
-            description: "Comprehensive assessment",
-            duration: "60-minute session",
+            price: "15 €",
+            duration: "30 minučių",
         },
         {
-            title: "Manual Therapy",
-            price: "$120",
-            description: "Pain relief techniques",
-            duration: "45-minute session",
+            title: "Kaklo ir pečių masažas",
+            price: "15 €",
+            duration: "30 minučių",
         },
         {
-            title: "Sports Rehabilitation",
-            price: "$130",
-            description: "Performance optimization",
-            duration: "50-minute session",
+            title: "Klasikinis viso kūno masažas",
+            price: "30 €",
+            duration: "90 minučių",
         },
         {
-            title: "Therapeutic Exercise",
-            price: "$100",
-            description: "Balance & coordination",
-            duration: "45-minute session",
+            title: "Atpalaiduojantis viso kūno masažas",
+            price: "30 €",
+            duration: "90 minučių",
         },
         {
-            title: "Post-Surgical Recovery",
-            price: "$140",
-            description: "Gradual mobility restoration",
-            duration: "50-minute session",
+            title: "Anticeliulitinis masažas",
+            price: "20 €",
+            duration: "30 minučių",
         },
         {
-            title: "Chronic Pain Management",
-            price: "$125",
-            description: "Long-term management",
-            duration: "45-minute session",
+            title: "Kojų masažas",
+            price: "20 €",
+            duration: "40 minučių",
         },
     ];
 
     return (
         <section
-            id="pricing"
+            id="kainos"
             className="min-h-screen flex items-center justify-center py-12 sm:py-16 md:py-20 px-4 bg-gradient-to-b bg-secondary-light to-white"
         >
             <div className="container mx-auto max-w-4xl">
@@ -69,12 +63,6 @@ export default function Pricing() {
                                                 {service.title}
                                             </h4>
                                             <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
-                                                <p className="text-sm sm:text-base text-gray-600">
-                                                    {service.description}
-                                                </p>
-                                                <span className="hidden sm:inline text-gray-400">
-                                                    •
-                                                </span>
                                                 <p className="text-sm text-gray-500">
                                                     {service.duration}
                                                 </p>

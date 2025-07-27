@@ -6,29 +6,38 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Irinos masažo terapija - Physical Therapy | Contact Expert PT Care in Healthville",
+    title: "Irinos masažo terapija – Vainotiškiai, Kaunas, Kėdainiai",
     description:
-        "Contact Irinos masažo terapija, DPT for expert physical therapy services. Specializing in orthopedic rehabilitation, sports injuries, chronic pain management, and post-surgical recovery in Healthville.",
+        "Profesionali Irinos masažo terapija Vainotiškiuose, Kėdainių ir Kauno rajonuose – klasikiniai, atpalaiduojantys ir anticeliulitiniai masažai gerinantys savijautą.",
     keywords:
-        "physical therapy, physical therapist, orthopedic rehabilitation, sports injury, chronic pain, post-surgical recovery, manual therapy, Healthville, Irinos masažo terapija",
+        "Irinos masažo terapija, masažas Kaunas, masažas Kėdainiai, masažas Kauno raj., atpalaiduojantis masažas, anticeliulitinis masažas, nugaros masažas, kaklo masažas, Vainotiškiai, masažo paslaugos",
     authors: [{ name: "Irinos masažo terapija" }],
-    creator: "Irinos masažo terapija Physical Therapy",
-    publisher: "Irinos masažo terapija Physical Therapy",
+    creator: "Irinos masažo terapija",
+    publisher: "Irinos masažo terapija",
     robots: "index, follow",
     openGraph: {
-        title: "Irinos masažo terapija - Physical Therapy | Expert PT Care",
+        title: "Irinos masažo terapija – Vainotiškiai, Kaunas, Kėdainiai",
         description:
-            "Expert physical therapy services specializing in orthopedic rehabilitation, sports injuries, and chronic pain management.",
-        url: "https://sarahmitchellpt.com",
-        siteName: "Irinos masažo terapija Physical Therapy",
+            "Profesionali Irinos masažo terapija Vainotiškiuose, Kėdainių ir Kauno rajonuose – klasikiniai, atpalaiduojantys ir anticeliulitiniai masažai gerinantys savijautą.",
+        url: "https://irinos-masazo-terapija.vercel.app/",
+        siteName: "Irinos masažo terapija",
         type: "website",
-        locale: "en_US",
+        locale: "lt_LT",
+        // jei turite OG paveikslėlį, pridėkite:
+        // images: [
+        //   {
+        //     url: "https://irinos-masazo-terapija.vercel.app/images/og-masazas.jpg",
+        //     alt: "Irinos masažo terapija – masažas Vainotiškiuose"
+        //   }
+        // ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Irinos masažo terapija - Physical Therapy",
+        title: "Irinos masažo terapija – Vainotiškiai, Kaunas, Kėdainiai",
         description:
-            "Expert physical therapy services specializing in orthopedic rehabilitation and sports injuries.",
+            "Profesionali Irinos masažo terapija Vainotiškiuose, Kėdainių ir Kauno rajonuose – klasikiniai, atpalaiduojantys ir anticeliulitiniai masažai gerinantys savijautą.",
+        // jei turite Twitter paveikslėlį, pridėkite:
+        // images: "https://irinos-masazo-terapija.vercel.app/images/twitter-masazas.jpg",
     },
     viewport: "width=device-width, initial-scale=1",
     themeColor: "#f43f5e",
@@ -42,65 +51,114 @@ export default function RootLayout({
     return (
         <html lang="en">
             <head>
-                <link rel="canonical" href="https://sarahmitchellpt.com" />
+                <link
+                    rel="canonical"
+                    href="https://irinos-masazo-terapija.vercel.app/"
+                />
+
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
                         __html: JSON.stringify({
                             "@context": "https://schema.org",
-                            "@type": "MedicalBusiness",
-                            name: "Irinos masažo terapija Physical Therapy",
+                            "@type": "HealthAndBeautyBusiness",
+                            name: "Irinos masažo terapija",
                             description:
-                                "Expert physical therapy services specializing in orthopedic rehabilitation, sports injuries, and chronic pain management.",
-                            url: "https://sarahmitchellpt.com",
-                            telephone: "(555) 123-4567",
-                            email: "info@sarahmitchellpt.com",
+                                "Profesionali Irinos masažo terapija Vainotiškiuose, Kaune ir Kėdainiuose – klasikiniai, atpalaiduojantys ir anticeliulitiniai masažai.",
+                            url: "https://irinos-masazo-terapija.vercel.app/",
+                            telephone: "+37069987387",
+                            email: "irinaul@gmail.com",
                             address: {
                                 "@type": "PostalAddress",
-                                streetAddress: "123 Wellness Drive, Suite 200",
-                                addressLocality: "Healthville",
-                                addressRegion: "ST",
-                                postalCode: "12345",
-                                addressCountry: "US",
+                                streetAddress: "Vainotiškiai",
+                                addressLocality: "Kėdainių r.",
+                                addressCountry: "LT",
                             },
-                            openingHours: [
-                                "Mo-Fr 08:00-18:00",
-                                "Sa 09:00-14:00",
+                            areaServed: [
+                                {
+                                    "@type": "City",
+                                    name: "Kaunas",
+                                },
+                                {
+                                    "@type": "City",
+                                    name: "Kėdainiai",
+                                },
+                                {
+                                    "@type": "Place",
+                                    name: "Vainotiškiai",
+                                },
                             ],
-                            priceRange: "$100-$150",
-                            medicalSpecialty: "Physical Therapy",
-                            founder: {
-                                "@type": "Person",
-                                name: "Irinos masažo terapija",
-                                jobTitle: "Doctor of Physical Therapy",
-                                description:
-                                    "Licensed physical therapist with over 12 years of experience specializing in orthopedic rehabilitation and sports injuries.",
-                            },
+                            priceRange: "€",
+                            image: "https://irinos-masazo-terapija.vercel.app/logo.webp",
                             hasOfferCatalog: {
                                 "@type": "OfferCatalog",
-                                name: "Physical Therapy Services",
+                                name: "Masažų katalogas",
                                 itemListElement: [
                                     {
                                         "@type": "Offer",
                                         itemOffered: {
                                             "@type": "Service",
-                                            name: "Initial Evaluation",
+                                            name: "Klasikinis nugaros masažas",
                                             description:
-                                                "Comprehensive assessment and personalized treatment plan",
+                                                "30 minučių klasikinio masažo nugarai",
                                         },
-                                        price: "150",
-                                        priceCurrency: "USD",
+                                        price: "15",
+                                        priceCurrency: "EUR",
                                     },
                                     {
                                         "@type": "Offer",
                                         itemOffered: {
                                             "@type": "Service",
-                                            name: "Manual Therapy",
+                                            name: "Kaklo ir pečių masažas",
                                             description:
-                                                "Joint mobilization and soft tissue massage",
+                                                "30 minučių kaklo ir pečių masažo atpalaidavimui",
                                         },
-                                        price: "120",
-                                        priceCurrency: "USD",
+                                        price: "15",
+                                        priceCurrency: "EUR",
+                                    },
+                                    {
+                                        "@type": "Offer",
+                                        itemOffered: {
+                                            "@type": "Service",
+                                            name: "Klasikinis viso kūno masažas",
+                                            description:
+                                                "90 minučių klasikinio viso kūno masažo",
+                                        },
+                                        price: "30",
+                                        priceCurrency: "EUR",
+                                    },
+                                    {
+                                        "@type": "Offer",
+                                        itemOffered: {
+                                            "@type": "Service",
+                                            name: "Atpalaiduojantis viso kūno masažas",
+                                            description:
+                                                "90 minučių atpalaiduojančio viso kūno masažo",
+                                        },
+                                        price: "30",
+                                        priceCurrency: "EUR",
+                                    },
+                                    {
+                                        "@type": "Offer",
+                                        itemOffered: {
+                                            "@type": "Service",
+                                            name: "Anticeliulitinis masažas",
+                                            description:
+                                                "30 minučių anticeliulitinio masažo kūno linijų gerinimui",
+                                        },
+                                        price: "20",
+                                        priceCurrency: "EUR",
+                                    },
+                                    {
+                                        "@type": "Offer",
+                                        itemOffered: {
+                                            "@type": "Service",
+                                            name: "Kojų masažas",
+                                            description:
+                                                "40 minučių kojų masažo",
+                                        },
+                                        price: "20",
+                                        priceCurrency: "EUR",
                                     },
                                 ],
                             },

@@ -67,7 +67,7 @@ export default function Hero() {
                         suteikia kūnui lengvumo pojūtį
                     </p>
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
-                        <Link href="#contact" passHref>
+                        <Link href="#kontaktai" passHref>
                             <Button
                                 className="cursor-pointer bg-primary hover:bg-primary-dark text-white px-6 sm:px-8 py-3 w-full sm:w-auto"
                                 size="lg"
@@ -75,7 +75,7 @@ export default function Hero() {
                                 Susisiekite
                             </Button>
                         </Link>
-                        <Link href="#about" passHref>
+                        <Link href="#apie-mane" passHref>
                             <Button
                                 size="lg"
                                 variant="outline"

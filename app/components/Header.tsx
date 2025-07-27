@@ -29,22 +29,22 @@ export default function Header() {
                     </div>
                     <nav className="hidden md:flex space-x-6">
                         <Link
-                            href="#about"
+                            href="#apie-mane"
                             className="text-gray-700 hover:text-primary-dark transition-colors"
                         >
-                            About
+                            Apie mane
                         </Link>
                         <Link
-                            href="#pricing"
+                            href="#kainos"
                             className="text-gray-700 hover:text-primary-dark transition-colors"
                         >
-                            Pricing
+                            Kainos
                         </Link>
                         <Link
-                            href="#contact"
+                            href="#kontaktai"
                             className="text-gray-700 hover:text-primary-dark transition-colors"
                         >
-                            Contact
+                            Kontaktai
                         </Link>
                     </nav>
                 </div>

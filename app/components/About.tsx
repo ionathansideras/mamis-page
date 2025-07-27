@@ -3,7 +3,7 @@ import { Award, Users } from "lucide-react";
 export default function About() {
     return (
         <section
-            id="about"
+            id="apie-mane"
             className="py-30 sm:py-16 md:py-30 px-5 lg:px-20 md:px-10 bg-white"
         >
             <div className="container mx-auto">
@@ -18,7 +18,7 @@ export default function About() {
                             anticeliulitinius masažus. Kiekvieną klientą
                             pasitinku su rūpesčiu ir nuoširdžiu noru padėti.
                         </p>
-                        <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+                        <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
                             Masažuotojos kelią pasirinkau vedama noro padėti
                             žmonėms jaustis geriau – tiek fiziškai, tiek
                             emociškai. Džiaugiuosi galėdama užtikrinti
@@ -46,9 +46,6 @@ export default function About() {
                                     <h4 className="font-semibold text-gray-900">
                                         300+ laimingų klientų
                                     </h4>
-                                    {/* <p className="text-gray-600 text-sm">
-                                        Successfully treated
-                                    </p> */}
                                 </div>
                             </div>
                         </div>

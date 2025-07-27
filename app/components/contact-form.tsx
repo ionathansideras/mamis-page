@@ -36,59 +36,63 @@ export function ContactForm() {
 
     return (
         <Card className="p-4 sm:p-6">
-            <h4 className="font-semibold text-gray-900 mb-4">
-                Send us a Message
-            </h4>
+            <h4 className="font-semibold text-gray-900 mb-4">Raskite mus</h4>
             <form id="contact-form" action={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                         <label className="block text-sm font-medium text-gray-700 mb-1">
-                            First Name
+                            Vardas
                         </label>
-                        <Input name="firstName" placeholder="Your first name" />
+                        <Input
+                            name="firstName"
+                            placeholder="Įrašykite savo vardą"
+                        />
                     </div>
                     <div>
                         <label className="block text-sm font-medium text-gray-700 mb-1">
-                            Last Name
+                            Pavardė
                         </label>
-                        <Input name="lastName" placeholder="Your last name" />
+                        <Input
+                            name="lastName"
+                            placeholder="Įrašykite savo pavardę"
+                        />
                     </div>
                 </div>
                 <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Email *
+                        El. paštas *
                     </label>
                     <Input
                         name="email"
                         type="email"
-                        placeholder="your.email@example.com"
+                        placeholder="el.pastas@example.com"
                         required
                     />
                 </div>
                 <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Phone *
+                        Telefono numeris *
                     </label>
                     <Input
                         name="phone"
                         type="tel"
-                        placeholder="(555) 123-4567"
+                        placeholder="(pvz., +370 600 12345)"
                         required
                     />
                 </div>
                 <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Preferred Contact Date
+                        Pageidaujama masažo data
                     </label>
                     <Input name="preferredDate" type="date" />
                 </div>
                 <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Message
+                        Žinutė
                     </label>
                     <Textarea
                         name="message"
-                        placeholder="Tell us about your condition or what you'd like to discuss..."
+                        placeholder="Trumpai aprašykite, kuo galėčiau jums padėti arba kokio masažo ieškote..."
                         rows={4}
                     />
                 </div>
@@ -97,7 +101,7 @@ export function ContactForm() {
                     disabled={isPending}
                     className="cursor-pointer w-full bg-primary hover:bg-primary-dark text-white"
                 >
-                    {isPending ? "Sending..." : "Send Message"}
+                    {isPending ? "Siuntimas..." : "Siųsti"}
                 </Button>
             </form>
         </Card>

@@ -8,12 +8,13 @@ export function MapView() {
             <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                     <MapPin className="h-5 w-5 text-primary flex-shrink-0" />
-                    <h4 className="font-semibold text-gray-900">Find Us</h4>
+                    <h4 className="font-semibold text-gray-900">Adresas</h4>
                 </div>
                 <div className="text-gray-600 text-sm sm:text-base mb-4">
-                    <p>123 Wellness Drive</p>
-                    <p>Suite 200</p>
-                    <p>Healthville, ST 12345</p>
+                    <p>Jaunimo g. 7</p>
+                    <p>Vainotiškių k.</p>
+                    <p>Kėdainių r.</p>
+                    <p>Lietuva</p>
                 </div>
                 <div className="w-full h-64 rounded-lg overflow-hidden border border-gray-200">
                     <iframe

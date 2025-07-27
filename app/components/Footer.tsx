@@ -36,43 +36,45 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="font-semibold mb-4">Contact Info</h4>
+                        <h4 className="font-semibold mb-4">Kontaktai </h4>
                         <div className="space-y-2 text-gray-300">
                             <div className="flex items-center space-x-2">
                                 <Phone className="h-4 w-4" />
-                                <span>+37069987387</span>
+                                <span>+370 699 87387</span>
                             </div>
                             <div className="flex items-center space-x-2">
                                 <Mail className="h-4 w-4" />
-                                <span>info@sarahmitchellpt.com</span>
+                                <span>irinaul@gmail.com</span>
                             </div>
                             <div className="flex items-center space-x-2">
                                 <MapPin className="h-4 w-4" />
-                                <span>123 Wellness Drive, Suite 200</span>
+                                <span>
+                                    Jaunimo g. 7, Vainotiškių k., Kėdainių r.
+                                </span>
                             </div>
                         </div>
                     </div>
 
                     <div>
-                        <h4 className="font-semibold mb-4">Quick Links</h4>
+                        <h4 className="font-semibold mb-4">Nuorodos</h4>
                         <div className="space-y-2">
                             <Link
-                                href="#about"
+                                href="#apie-mane"
                                 className="block text-gray-300 hover:text-white transition-colors"
                             >
-                                About
+                                Apie mane
                             </Link>
                             <Link
-                                href="#pricing"
+                                href="#kainos"
                                 className="block text-gray-300 hover:text-white transition-colors"
                             >
-                                Pricing
+                                Kainos
                             </Link>
                             <Link
-                                href="#contact"
+                                href="#kontaktai"
                                 className="block text-gray-300 hover:text-white transition-colors"
                             >
-                                Contact
+                                Kontaktai
                             </Link>
                         </div>
                     </div>
@@ -80,8 +82,8 @@ export default function Footer() {
 
                 <div className="border-t border-gray-800 mt-8 pt-11 text-center text-gray-300">
                     <p>
-                        &copy; {new Date().getFullYear()} Irinos masažo terapija
-                        Physical Therapy. All rights reserved.
+                        &copy; {new Date().getFullYear()} Irinos masažo
+                        terapija. Visos teisės saugomos.
                     </p>
                 </div>
             </div>
