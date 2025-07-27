@@ -70,8 +70,8 @@ export default function RootLayout({
                             email: "irinaul@gmail.com",
                             address: {
                                 "@type": "PostalAddress",
-                                streetAddress: "Vainotiškiai",
-                                addressLocality: "Kėdainių r.",
+                                streetAddress: "Jaunimo g. 7",
+                                addressLocality: "Vainotiškių k., Kėdainių r.",
                                 addressCountry: "LT",
                             },
                             areaServed: [
