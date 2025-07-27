@@ -51,6 +51,10 @@ export default function RootLayout({
     return (
         <html lang="en">
             <head>
+                <meta
+                    name="google-site-verification"
+                    content="0yW0VsGTutrgR99zdG5iLdKm0uggv2YgpfCJAr-K1mo"
+                />
                 <link
                     rel="canonical"
                     href="https://irinos-masazo-terapija.vercel.app/"
