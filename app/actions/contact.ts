@@ -1,6 +1,7 @@
 "use server";
 
 import nodemailer from "nodemailer";
+import { buildContactEmailHtml } from "@/buildContactEmailHtml";
 
 // --- Utility functions ---
 function sanitizeInput(input: string | null): string {
@@ -81,40 +82,30 @@ export async function submitContactForm(formData: FormData) {
                 message: "Pavardė turi būti trumpesnė nei 50 simbolių.",
             };
 
-        console.log("Sending sanitized contact form:", {
-            firstName,
-            lastName,
-            email,
-            phone: phone.substring(0, 3) + "***",
-            preferredDate,
-            messageLength: message.length,
-        });
-
         // --- Configure Nodemailer ---
         const transporter = nodemailer.createTransport({
             host: process.env.SMTP_HOST,
             port: Number(process.env.SMTP_PORT),
-            secure: process.env.SMTP_SECURE === "true", // true for 465, false for 587
+            secure: false, // true for 465, false for 587
             auth: {
                 user: process.env.SMTP_USER,
-                pass: process.env.SMTP_PASS,
+                pass: process.env.GOOGLE_APP_KEY,
             },
         });
 
         // --- Send the actual email ---
         await transporter.sendMail({
-            from: `"Website Contact" <${process.env.SMTP_USER}>`,
-            to: process.env.CONTACT_RECEIVER_EMAIL,
-            subject: "New Contact Form Submission",
-            html: `
-                <h2>New Contact Form Submission</h2>
-                <p><strong>Name:</strong> ${firstName} ${lastName}</p>
-                <p><strong>Email:</strong> ${email}</p>
-                <p><strong>Phone:</strong> ${phone}</p>
-                <p><strong>Preferred Date:</strong> ${preferredDate}</p>
-                <p><strong>Message:</strong></p>
-                <p>${message}</p>
-            `,
+            from: `"Svetainės kontaktai" <${process.env.SMTP_USER}>`,
+            to: process.env.SMTP_USER,
+            subject: "📩 Nauja žinutė iš kontaktų formos 🎉",
+            html: buildContactEmailHtml({
+                firstName,
+                lastName,
+                email,
+                phone,
+                preferredDate,
+                message,
+            }),
         });
 
         return {
