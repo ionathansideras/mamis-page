@@ -2,22 +2,22 @@ export default function Pricing() {
     const services = [
         {
             title: "Klasikinis nugaros masažas",
-            price: "15 €",
+            price: "18 €",
             duration: "30 minučių",
         },
         {
             title: "Kaklo ir pečių masažas",
-            price: "15 €",
+            price: "18 €",
             duration: "30 minučių",
         },
         {
             title: "Klasikinis viso kūno masažas",
-            price: "30 €",
+            price: "35 €",
             duration: "90 minučių",
         },
         {
             title: "Atpalaiduojantis viso kūno masažas",
-            price: "30 €",
+            price: "35 €",
             duration: "90 minučių",
         },
         {
